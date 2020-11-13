@@ -3,5 +3,5 @@ function formatarFloat(valor){
     console.log(dinheiro)
 }
 
-formatarFloat(3,000009)
+formatarFloat(3,000077)
 formatarFloat(54,0938883)

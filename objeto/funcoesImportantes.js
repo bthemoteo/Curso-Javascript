@@ -17,7 +17,7 @@ Object.defineProperty(pessoa, 'dataNascimento', {
     value: '01/01/2019'
 })
 
-pessoa.dataNascimento = '01/01/2017'
+pessoa.dataNascimento = '01/01/2016'
 console.log(pessoa.dataNascimento)
 console.log(Object.keys(pessoa))
 

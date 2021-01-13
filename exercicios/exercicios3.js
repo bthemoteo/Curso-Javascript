@@ -11,7 +11,7 @@ console.log(maiorOuIgual(5,'5'))
 
 function inverterValor(valor){
     tipo = typeof valor
-
+ 
     if (tipo == 'boolean')
     return !valor
     else if (tipo == 'number')

@@ -6,15 +6,15 @@ const getTurma = letra => {
     return new Promise((resolve, reject) => {
         http.get(url, res => {
             let resultado = ''
-    
+
             res.on('data', dados => {
                 resultado += dados
             })
-    
-            res.on('end', () =>{
-                try{
+
+            res.on('end', () => {
+                try {
                     resolve(JSON.parse(resultado))
-                } catch(e){
+                } catch (e) {
                     reject(e)
                 }
             })
@@ -37,4 +37,4 @@ const getTurma = letra => {
 Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
     .then(turmas => [].concat(...turmas))
     .then(alunos => alunos.map(aluno => aluno.nome))
-    .then(nomes => console.log(nomes))
+    .then(nomes => console.log(`${letra}nomes`))

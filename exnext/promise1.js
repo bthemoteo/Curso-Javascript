@@ -8,4 +8,3 @@ new Promise(function(resolve){
     .then(primeiroElemento)
     .then(letraMinuscula)
     .then(console.log)
-
